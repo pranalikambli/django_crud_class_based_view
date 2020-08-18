@@ -4,7 +4,7 @@ Django CRUD Class Based View
 Django CRUD Class Based View Examples
 
 Running the Project Locally First, clone the repository to your local machine:
-git clone https://github.com/pranalikambli/django_crispy_forms.git
+git clone https://github.com/pranalikambli/django_crud_class_based_view.git
 
 Install the requirements:
 pip install -r requirements.txt 
