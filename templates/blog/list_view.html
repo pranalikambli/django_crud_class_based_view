@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="album py-5">
+    <div class="container">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        {% if object_list %}
+          {% for each in index_post_list %}
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+              <h2>{{each.title}}</h2>
+              <p>{{each.excerpt}}</p>
+              <p><a class="btn btn-secondary" href="{% url 'post_detail_view'  slug=each.slug %}" role="button">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+          {% endfor %}
+        {% else %}
+            No Post Found
+        {% endif %}
+      </div>
+    </div><!-- /.row -->
+  </div>
+{% endblock %}
