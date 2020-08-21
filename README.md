@@ -30,7 +30,7 @@ python manage.py makemigrations blog
 ```bash
 python manage.py migrate
 ```
-Finally, run the development server.
+# Running the Project Locally
 ```bash
 python manage.py runserver 
 ```
