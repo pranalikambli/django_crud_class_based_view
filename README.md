@@ -1,16 +1,37 @@
-# django_crud_class_based_view
-Django CRUD Class Based View
 
-Django CRUD Class Based View Examples
+# Django Crud Class Based View
+Django CRUD Class Based View is a Python-Django based CMS application where you can create (List View, Create View, Detail View, Update View and Delete View) for blogs.
 
-Running the Project Locally First, clone the repository to your local machine:
+# Installation
+
+Running the Project Locally First, clone the repository to your local machine.
+```bash
 git clone https://github.com/pranalikambli/django_crud_class_based_view.git
+```
 
-Install the requirements:
-pip install -r requirements.txt 
+For Python & Django Installation check our blogs.
 
-Apply the migrations:
+For Windows : https://techpluslifestyle.com/technology/how-to-install-django-3-on-windows
+
+For Ubuntu :  https://techpluslifestyle.com/technology/how-to-install-django-3-on-ubuntu/
+
+Install the requirements.
+```bash
+pip install -r requirements.txt
+```
+
+Apply the migrations.
+```bash
 python manage.py migrate 
-
-Finally, run the development server:
-python manage.py runserver The project will be available at 127.0.0.1:8000.
+```
+```bash
+python manage.py makemigrations blog
+```
+```bash
+python manage.py migrate
+```
+Finally, run the development server.
+```bash
+python manage.py runserver 
+```
+The project will be available at 127.0.0.1:8000.
